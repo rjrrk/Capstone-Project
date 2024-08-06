@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     // Change file permissions for build.sh and deploy.sh
-                    sh 'chmod +x build-image.sh'
+                    sh 'chmod +x build.sh'
                     sh 'chmod +x deploy.sh'
                 }
             }
@@ -15,8 +15,8 @@ pipeline {
         
         stage('Build') {
             steps {
-                // Run the build-image.sh script
-                sh './build-image.sh'
+                // Run the build.sh script
+                sh './build.sh'
             }
         }
         
