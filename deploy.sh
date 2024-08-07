@@ -1,10 +1,12 @@
 #!/bin/bash
 
-DOCKER_REPO="rjrrk/prod"
+DOCKER_USERNAME="rjrrk"
+DOCKER_PASSWORD="Sithara@2020"
+DOCKER_REPO="prod"
 DOCKER_TAG="latest"
 
 echo "Logging in to Docker Hub..."
-docker login
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-std
 
 LOCAL_IMAGE="react-app-name"
 
