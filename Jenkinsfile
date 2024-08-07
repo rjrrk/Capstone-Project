@@ -16,6 +16,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Run the build.sh script
+                sudo usermod -aG docker ubuntu
                 sh './build.sh'
             }
         }
