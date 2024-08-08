@@ -3,5 +3,5 @@ services:
   react-app:
     image: react-app-name
     ports:
-      - "8080:80"
+      - "80:80"
     restart: unless-stopped
