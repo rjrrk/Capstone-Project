@@ -6,7 +6,7 @@ DOCKER_REPO="rjrrk/prod"
 DOCKER_TAG="latest"
 
 echo "Logging in to Docker Hub..."
-echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-std
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 LOCAL_IMAGE="react-app-name"
 
