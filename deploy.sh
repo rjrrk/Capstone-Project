@@ -2,7 +2,7 @@
 
 DOCKER_USERNAME="rjrrk"
 DOCKER_PASSWORD="Sithara@2020"
-DOCKER_REPO="rjrrk/prod"
+DOCKER_REPO="rjrrk/dev"
 DOCKER_TAG="latest"
 
 echo "Logging in to Docker Hub..."
