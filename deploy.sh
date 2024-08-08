@@ -2,7 +2,7 @@
 
 DOCKER_USERNAME="rjrrk"
 DOCKER_PASSWORD="Sithara@2020"
-DOCKER_REPO="prod"
+DOCKER_REPO="rjrrk/prod"
 DOCKER_TAG="latest"
 
 echo "Logging in to Docker Hub..."
@@ -18,5 +18,5 @@ echo "Pushing the Docker image to Docker Hub..."
 docker push "$DOCKER_USERNAME/${DOCKER_REPO}:${DOCKER_TAG}"
 
 echo "Deployment to Docker Hub completed successfully."
-
-docker-compose up -d
+docker compose down || true
+docker compose up -d
